@@ -8,7 +8,7 @@ const FacultiesList = () => {
     useEffect(() => {
         const fetchAdmins = async () => {
             try {
-                const response = await axios.get('http://localhost:8084/students');
+                const response = await axios.get('http://localhost:8084/faculties');
                 setAdmins(response.data);
             } catch (error) {
                 console.error('Error fetching admins:', error);
@@ -57,7 +57,7 @@ const FacultiesList = () => {
 
     return (
         <div className="max-w-lg mx-auto my-10 p-5 border rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-6">Students List</h2>
+            <h2 className="text-2xl font-bold mb-6">Faculty List</h2>
             <ul>
                 {admins.map(admin => (
                     <li key={admin.id} className="flex justify-between items-center mb-4 p-2 border-b">

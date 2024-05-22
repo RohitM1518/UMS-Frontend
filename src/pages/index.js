@@ -7,6 +7,10 @@ import AddStudent from './AddStudent';
 import AddFaculty from './AddFaculty'
 import StudentsList from "./StudentsList";
 import FacultiesList from "./FacutiesList";
+import AddRole from "./AddRole";
+import RolesList from "./RolesList";
+import AddDepartment from "./AddDepartment";
+
 export{
     Home,
     AddUser,
@@ -16,6 +20,9 @@ export{
     AddStudent,
     AddFaculty,
     StudentsList,
-    FacultiesList
+    FacultiesList,
+    AddRole,
+    RolesList,
+    AddDepartment
     
 }

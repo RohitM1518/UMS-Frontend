@@ -22,11 +22,11 @@ const Sidebar = () => {
                 </Accordion>
                 <Accordion title="Student Module">
                     <a href="/addstudent" className="block py-2 pl-6 bg-gray-100">Add Student</a>
-                    <a href="/studentslist" className="block py-2 pl-6">Delete Student</a>
+                    <a href="/studentslist" className="block py-2 pl-6">Manage Students</a>
                 </Accordion>
                 <Accordion title="Faculty Module">
                     <a href="/addfaculty" className="block py-2 pl-6 bg-gray-100">Add Faculty</a>
-                    <a href="/facultiesList" className="block py-2 pl-6">Delete Faculty</a>
+                    <a href="/facultiesList" className="block py-2 pl-6">Manage Faculty</a>
                 </Accordion>
                 <Accordion title="Enrollment Module">
                     <a href="/enroll" className="block py-2 pl-6 bg-gray-100">Enroll Student</a>
@@ -36,9 +36,9 @@ const Sidebar = () => {
                     <a href="/addrole" className="block py-2 pl-6 bg-gray-100">Add Role</a>
                     <a href="/roleslist" className="block py-2 pl-6">Delete Role</a>
                 </Accordion>
-                <Accordion title="Course Module">
-                    <a href="/addcourse" className="block py-2 pl-6 bg-gray-100">Add Department</a>
-                    <a href="/courseslist" className="block py-2 pl-6">Remove Department</a>
+                <Accordion title="Department Module">
+                    <a href="/adddepartment" className="block py-2 pl-6 bg-gray-100">Add Department</a>
+                    <a href="/departmentlist" className="block py-2 pl-6">Remove Department</a>
                 </Accordion>
             </div>
             <a href="#footer" className="block py-2 px-8">Contact</a>
