@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
   return (
     <div>
-         <header className="container mx-auto flex items-center gap-4 py-6 ">
+         <header className="container mx-auto flex items-center gap-4  ">
       <img src="https://www.mbacollegesbangalore.in/wp-content/uploads/2017/10/Presidency-University.png" alt="Presidency University" className="w-16 h-16" />
       <div>
         <p>Gain More Knowledge, Reach Greater Heights</p>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const AddUser = () => {
+const AddAdmin = () => {
     const [userData, setUserData] = useState({
         name: '',
         email: '',
@@ -62,16 +62,16 @@ const AddUser = () => {
         };
 
         try {
-            const response = await axios.post('http://localhost:8084/users', data);
-            console.log('User added successfully:', response.data);
+            const response = await axios.post('http://localhost:8084/administrators', data);
+            console.log('Admin added successfully:', response.data);
         } catch (error) {
-            console.error('Error adding user:', error);
+            console.error('Error adding Admin:', error);
         }
     };
 
     return (
         <div className="max-w-lg mx-auto my-10 p-5 border rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-6">Create User</h2>
+            <h2 className="text-2xl font-bold mb-6">Create Admin</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-4">
                     <label className="block text-gray-700">Name</label>
@@ -178,4 +178,4 @@ const AddUser = () => {
     );
 };
 
-export default AddUser;
+export default AddAdmin;

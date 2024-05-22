@@ -12,9 +12,9 @@ function App() {
 
   return (
     <>
-      <Header />
-      {/* <Sidebar /> */}
+      <Sidebar />
       <div className='ml-60'>
+      <Header />
         <Outlet />
       </div>
       <Footer />
