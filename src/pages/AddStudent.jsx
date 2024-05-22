@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const AddUser = () => {
+const AddStudent = () => {
     const [userData, setUserData] = useState({
         name: '',
         email: '',
@@ -9,8 +9,8 @@ const AddUser = () => {
         address: '',
         password: '',
         roleId: 2,
-        roleName: '',
-        rolePermissions: ['admin_permission_1', 'admin_permission_2']
+        roleName: 'Student',
+        rolePermissions: ['']
     });
 
     const handleChange = (e) => {
@@ -62,7 +62,7 @@ const AddUser = () => {
         };
 
         try {
-            const response = await axios.post('http://localhost:8084/users', data);
+            const response = await axios.post('http://localhost:8084/students', data);
             console.log('User added successfully:', response.data);
         } catch (error) {
             console.error('Error adding user:', error);
@@ -71,7 +71,7 @@ const AddUser = () => {
 
     return (
         <div className="max-w-lg mx-auto my-10 p-5 border rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold mb-6">Create User</h2>
+            <h2 className="text-2xl font-bold mb-6">Create Student</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-4">
                     <label className="block text-gray-700">Name</label>
@@ -171,11 +171,11 @@ const AddUser = () => {
                     type="submit"
                     className="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-200"
                 >
-                    Add User
+                    Add Student
                 </button>
             </form>
         </div>
     );
 };
 
-export default AddUser;
+export default AddStudent;

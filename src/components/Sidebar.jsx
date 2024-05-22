@@ -21,24 +21,24 @@ const Sidebar = () => {
                     <a href="/adminslist" className="block py-2 pl-6">Manage Admins</a>
                 </Accordion>
                 <Accordion title="Student Module">
-                    <a href="#" className="block py-2 pl-6 bg-gray-100">Add Student</a>
-                    <a href="#" className="block py-2 pl-6">Delete Student</a>
+                    <a href="/addstudent" className="block py-2 pl-6 bg-gray-100">Add Student</a>
+                    <a href="/studentslist" className="block py-2 pl-6">Delete Student</a>
                 </Accordion>
                 <Accordion title="Faculty Module">
-                    <a href="#" className="block py-2 pl-6 bg-gray-100">Add Faculty</a>
-                    <a href="#" className="block py-2 pl-6">Delete Faculty</a>
+                    <a href="/addfaculty" className="block py-2 pl-6 bg-gray-100">Add Faculty</a>
+                    <a href="/facultiesList" className="block py-2 pl-6">Delete Faculty</a>
                 </Accordion>
                 <Accordion title="Enrollment Module">
-                    <a href="#" className="block py-2 pl-6 bg-gray-100">Enroll Student</a>
+                    <a href="/enroll" className="block py-2 pl-6 bg-gray-100">Enroll Student</a>
                     <a href="#" className="block py-2 pl-6">Remove Student</a>
                 </Accordion>
                 <Accordion title="Role Module">
-                    <a href="#" className="block py-2 pl-6 bg-gray-100">Add Role</a>
-                    <a href="#" className="block py-2 pl-6">Delete Role</a>
+                    <a href="/addrole" className="block py-2 pl-6 bg-gray-100">Add Role</a>
+                    <a href="/roleslist" className="block py-2 pl-6">Delete Role</a>
                 </Accordion>
                 <Accordion title="Course Module">
-                    <a href="#" className="block py-2 pl-6 bg-gray-100">Add Department</a>
-                    <a href="#" className="block py-2 pl-6">Remove Department</a>
+                    <a href="/addcourse" className="block py-2 pl-6 bg-gray-100">Add Department</a>
+                    <a href="/courseslist" className="block py-2 pl-6">Remove Department</a>
                 </Accordion>
             </div>
             <a href="#footer" className="block py-2 px-8">Contact</a>

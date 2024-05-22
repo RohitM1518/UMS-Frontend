@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { Home,AddUser,UsersList,AddAdmin,AdminsList } from './pages/index.js'
+import { Home,AddUser,UsersList,AddAdmin,AdminsList, AddStudent, AddFaculty, StudentsList } from './pages/index.js'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -38,6 +38,19 @@ const router = createBrowserRouter([
         path:"/adminslist",
         element:<AdminsList />
       },
+      {
+        path:"/addstudent",
+        element:<AddStudent />
+      },
+      {
+        path:"/studentslist",
+        element:<StudentsList />
+      },
+      {
+        path:"/addfaculty",
+        element:<AddFaculty />
+      },
+      
 
     ]
   }

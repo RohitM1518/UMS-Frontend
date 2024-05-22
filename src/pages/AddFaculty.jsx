@@ -9,8 +9,8 @@ const AddUser = () => {
         address: '',
         password: '',
         roleId: 2,
-        roleName: '',
-        rolePermissions: ['admin_permission_1', 'admin_permission_2']
+        roleName: 'Faculty',
+        rolePermissions: ['']
     });
 
     const handleChange = (e) => {
@@ -62,7 +62,7 @@ const AddUser = () => {
         };
 
         try {
-            const response = await axios.post('http://localhost:8084/users', data);
+            const response = await axios.post('http://localhost:8084/faculties', data);
             console.log('User added successfully:', response.data);
         } catch (error) {
             console.error('Error adding user:', error);
@@ -171,7 +171,7 @@ const AddUser = () => {
                     type="submit"
                     className="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-200"
                 >
-                    Add User
+                    Add Faculty
                 </button>
             </form>
         </div>
